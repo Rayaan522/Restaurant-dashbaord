@@ -1,38 +1,130 @@
-.App {
+.dashboard {
+  padding: 20px;
+}
+
+h1,h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.metrics {
+  display: flex;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
+}
+.metrics1 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.metric {
+  flex: 1;
+  /* min-width: 300px; */
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  /* border: 1px solid #ccc; */
+  border-radius: 10px;
+  text-align: center;
+}
+.bgcolor {
+  background: #d17384;
+}
+.bg2 {
+  background-color: #e9e9ab;
+}
+.bg3{
+  background-color: #d9b993;
+}
+.bg4{
+  background-color: #88b4b5;
+}
+.bg5{
+background-color: darkgray;
+}
+ 
+.metric h2,p {
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+.customer-card p,h3{
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: sans-serif;
+
+}
+.customer-details h2{
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+.customer-details{
+  color: #fff;
+  border: 1px solid #ccc;
+  padding: 4px;
+  height: 64vh;
+  box-sizing: border-box;
+  border-radius: 5px;
+  overflow-y: scroll;
+}
+
+.fixed-header {
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white; /* Adjust as needed */
+  z-index: 1000; /* Ensure it stays above other content */
+  padding: 10px 0; /* Add some padding for aesthetics */
+  border-bottom: 1px solid #ccc; /* Optional: Add a bottom border */
+}
+.tablecontainer {
+      /* width: 98%; */
+      overflow: scroll;
+      padding: 20px 20px;
+      max-height:600px;
+      background-color: #8f7f6b !important;
+}
+ 
+.date {
+  display: flex;
+  justify-content: space-between;
+}
+.stickyHeader, .stickyTypography {
+  position: sticky;
+  top: 0;
+  background-color: #f5f5f5;
+  z-index:3;
+  border-bottom: 1px solid #ddd; /* Optional: Adds a border between the headers and content */
+}
+
+.stickyTypography {
+  top: 0;
+  z-index: 2; /* Ensure it's above the table header */
+  padding: 16px; /* Optional: Adds padding to the typography header */
+  background-color: #f5f5f5; /* Optional: Different background for better distinction */
+  text-align: center;
+}
+.del {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* .tablehead,.tablebody{
+  color:#ccc !important;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+} */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dashboard {
+  background-color: #92a1ab;
 }
